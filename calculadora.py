@@ -36,5 +36,5 @@ while True:
     # PERGUNTA SE O USUÁRIO DESEJA CONTINUAR (agora dentro do loop!)
     continuar = input('\nDeseja continuar com outra operação? (S/N): ').lower()
     if continuar != 's':
-        print('Encerrando...')
+        print('Encerrando.../n')
         break
