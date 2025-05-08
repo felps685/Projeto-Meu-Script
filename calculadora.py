@@ -1,9 +1,17 @@
+### PROJETO CALCULADORA ###
+# SAUDAÇÃO
 print('Bem-Vindo à calculadora!')
 
 while True:
-    # ENTRADA DOS NÚMEROS
-    num1 = float(input('Digite o primeiro número: '))
-    num2 = float(input('Digite o segundo número: '))
+    
+ while True:
+     # ENTRADA DOS NÚMEROS
+    try:
+        num1 = float(input('Digite o primeiro número: '))
+        num2 = float(input('Digite o segundo número: '))
+    except ValueError:
+        print('Erro: Por Favor, insira apenas números.')
+        continue
 
     # OPERAÇÕES
     print('\nEscolha a operação:')
@@ -36,5 +44,5 @@ while True:
     # PERGUNTA SE O USUÁRIO DESEJA CONTINUAR (agora dentro do loop!)
     continuar = input('\nDeseja continuar com outra operação? (S/N): ').lower()
     if continuar != 's':
-        print('Encerrando.../n')
+        print('Encerrando...\n')
         break
